@@ -98,6 +98,8 @@ p { margin: 0 0 1em; max-width: 60ch; }
 }
 .hero .visit-line span::before { content: "✦"; color: var(--honey); margin-right: 8px; }
 .hero .arch { aspect-ratio: 4 / 5; box-shadow: 0 24px 48px -24px rgba(58,46,42,.35); }
+.hero-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 999px 999px 28px 28px; box-shadow: 0 24px 48px -24px rgba(58,46,42,.35); }
+@media (max-width: 860px) { .hero-photo { aspect-ratio: 4 / 3; border-radius: 999px 999px 24px 24px; } }
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 36px; }
   .hero .arch { aspect-ratio: 4 / 3; border-radius: 999px 999px 24px 24px; }
@@ -257,7 +259,7 @@ p { margin: 0 0 1em; max-width: 60ch; }
           <span>Knightdale, NC</span>
         </div>
       </div>
-      <div class="arch" role="img" aria-label="Placeholder photo"><span>Photo: Sunday worship with a welcoming crowd</span></div>
+      <img class="hero-photo" src="hero.png" alt="Friends from the KUMC community gathered outside the church building on an evening">
     </div>
   </section>
 
